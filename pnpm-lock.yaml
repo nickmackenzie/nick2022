@@ -2,12 +2,14 @@ lockfileVersion: 5.3
 
 specifiers:
   autoprefixer: ^10.4.2
+  fullpage.js: ^3.1.2
   parcel: ^2.3.1
   postcss: ^8.4.6
   tailwindcss: ^3.0.22
 
 dependencies:
   autoprefixer: 10.4.2_postcss@8.4.6
+  fullpage.js: 3.1.2
   postcss: 8.4.6
 
 devDependencies:
@@ -1174,6 +1176,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /fullpage.js/3.1.2:
+    resolution: {integrity: sha512-hv7z6xhbg2StTp1UDq2hi+0oHjhT7cW3zCL3qCIJ3ood5pN0FRBQ2YKIOUobhsp4ATSQlr6sZ2TOcS+Ha+T7Cg==}
+    dev: false
 
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
