@@ -8,16 +8,14 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0" />
     <title>Nick MacKenzie - Full Stack Javascript Developer</title>
-    <link rel="stylesheet"
-          type="text/css"
-          href="./fullpage.css" />
+
     <link href="/dist/output.css"
           rel="stylesheet" />
 
 </head>
 
 <body>
-    <header class="sticky top-0 z-50">
+    <!-- <header class="sticky top-0 z-50">
         <nav
              class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white">
             <div>
@@ -41,31 +39,53 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </header> -->
     <div id="fullpage">
-        <section class="min-h-screen text-center section">
+        <section id="about"
+                 class="min-h-screen text-center section border-2">
             <h1 class="text-5xl font-bold mb-2 bg-clip-text">Nick Mackenzie</h1>
 
             <p class="text-gray-700 text-lg mb-8">Full Stack Javascript
                 Developer
             </p>
         </section>
-        <section class="min-h-screen  text-center section">
+        <section id="projects"
+                 class="min-h-screen text-center section">
             <h1 class="text-5xl font-bold mb-2 bg-clip-text">Projects</h1>
 
             <p class="text-gray-700 text-lg mb-8">Put projects here</p>
         </section>
+        <section id="about-2"
+                 class="min-h-screen text-center section border-2">
+            <h1 class="text-5xl font-bold mb-2 bg-clip-text">Nick Mackenzie</h1>
+
+            <p class="text-gray-700 text-lg mb-8">Full Stack Javascript
+                Developer
+            </p>
+        </section>
     </div>
 </body>
-<script type="text/javascript"
-        src="./fullpage.js"></script>
+
 <script src="./nav.ts"></script>
 <script defer>
-    new fullpage('#fullpage', {
-        licenseKey: 'YOUR KEY HERE',
-        sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
-        continuousVertical: true
-    });
+    fullScroll('fullpage')
+    // new fullpage('#fullpage', {
+    //     licenseKey: 'YOUR KEY HERE',
+    //     sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+    //     continuousVertical: true,
+    //     afterLoad: function (origin, destination, direction) {
+    //         var loadedSection = this;
+    //         console.log(origin)            //using index
+    //         if (origin.index == 0) {
+    //             getNavPosition(0)
+    //         }
+
+    //         //using anchorLink
+    //         if (origin.index == 1) {
+    //             getNavPosition(1)
+    //         }
+    //     }
+    // });
 
 </script>
 
