@@ -8,11 +8,26 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0" />
     <title>Nick MacKenzie - Full Stack Javascript Developer</title>
-
-    <link href="/dist/output.css"
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link href="./fullpage.css"
+          rel="stylesheet">
+    </link>
+    <link href="../dist/output.css"
           rel="stylesheet" />
 
 </head>
+<style>
+    i {
+        font-size: 4rem;
+        margin: 1rem;
+
+    }
+
+    .devicon-linkedin-plain-wordmark {
+        font-size: 4rem;
+    }
+</style>
 
 <body>
     <!-- <header class="sticky top-0 z-50">
@@ -48,44 +63,66 @@
             <p class="text-gray-700 text-lg mb-8">Full Stack Javascript
                 Developer
             </p>
+            <p class="flex justify-center content-center"> <i class="
+               devicon-github-original-wordmark
+               colored"></i>
+                <i class="devicon-linkedin-plain-wordmark colored"></i>
+
+            </p>
+            <div> <i class="devicon-canva-original"></i>
+                <i class="devicon-express-original-wordmark colored"></i>
+
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-jquery-plain-wordmark colored"></i>
+                <i class="devicon-linux-plain colored"></i>
+                <i class="devicon-nextjs-original-wordmark colored"></i>
+                <i class="devicon-nodejs-plain colored"></i>
+                <i class="devicon-npm-original-wordmark colored"></i>
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="devicon-sass-original colored"></i>
+                <i class="devicon-svelte-plain-wordmark colored"></i>
+                <i class="devicon-tailwindcss-original-wordmark colored"></i>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-visualstudio-plain-wordmark colored"></i>
+                <i class="devicon-vscode-plain-wordmark colored"></i>
+                <i class="devicon-yarn-plain-wordmark colored"></i>
+                <i class="devicon-dotnetcore-plain colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-csharp-plain-wordmark colored"></i>
+                <i class="devicon-mongodb-plain-wordmark colored"></i>
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+
+            </div>
         </section>
         <section id="projects"
-                 class="min-h-screen text-center section">
-            <h1 class="text-5xl font-bold mb-2 bg-clip-text">Projects</h1>
-
-            <p class="text-gray-700 text-lg mb-8">Put projects here</p>
+                 class="min-h-screen text-center text-white section">
+            <h1 class="text-5xl font-bold mb-2  "
+                style="color:white">Projects
+            </h1>
+            <div class="slide"
+                 style="color:white"> Slide 1 </div>
+            <div class="slide"
+                 style="color:white"> Slide 2 </div>
+            <div class="slide"
+                 style="color:white"> Slide 3 </div>
+            <div class="slide"
+                 style="color:white"> Slide 4 </div>
         </section>
-        <section id="about-2"
-                 class="min-h-screen text-center section border-2">
-            <h1 class="text-5xl font-bold mb-2 bg-clip-text">Nick Mackenzie</h1>
 
-            <p class="text-gray-700 text-lg mb-8">Full Stack Javascript
-                Developer
-            </p>
-        </section>
     </div>
 </body>
+<script src="./fullpage.js"></script>
 
-<script src="./nav.ts"></script>
-<script defer>
-    fullScroll('fullpage')
-    // new fullpage('#fullpage', {
-    //     licenseKey: 'YOUR KEY HERE',
-    //     sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
-    //     continuousVertical: true,
-    //     afterLoad: function (origin, destination, direction) {
-    //         var loadedSection = this;
-    //         console.log(origin)            //using index
-    //         if (origin.index == 0) {
-    //             getNavPosition(0)
-    //         }
-
-    //         //using anchorLink
-    //         if (origin.index == 1) {
-    //             getNavPosition(1)
-    //         }
-    //     }
-    // });
+<script>
+    // fullScroll('fullpage')
+    new fullpage('#fullpage', {
+        licenseKey: 'B168051E-C870452A-885A7734-2C569CEA',
+        sectionsColor: ['white', 'black', '#C0C0C0', '#ADD8E6'],
+        continuousVertical: true,
+        scrollingSpeed: 400,
+        dragAndMove: true,
+    });
 
 </script>
 
